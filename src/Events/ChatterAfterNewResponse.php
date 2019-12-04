@@ -1,6 +1,6 @@
 <?php
 
-namespace DevDojo\Chatter\Events;
+namespace Alipes\Chatter\Events;
 
 use Illuminate\Http\Request;
 
