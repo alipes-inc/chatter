@@ -85,7 +85,7 @@ class ChatterPostController extends Controller
             $request->request->add(['markdown' => 1]);
         endif;
 
-        $new_post = Models::post()->create($request->except('id'));
+        $new_post = Models::post()->create($request->all());
 
         $discussion = Models::discussion()->find($request->chatter_discussion_id);
 
